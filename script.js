@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const welcomeMessage3 = "함께 축복해 주신다면";
   const welcomeMessage4 = "한없는 기쁨으로 간직하겠습니다.";
   const welcomeMessage5 = "귀한 시간 내주시어";
-  const welcomeMessage6 = "결혼식에 참석해 주셨으면 합니다.";
+  const welcomeMessage6 = "피로연에 참석해 주셨으면 합니다.";
   const welcomeMessage7 = "감사드립니다.";
   const groomFullName = "이치종";
   const groomAccountBank = "카카오뱅크";
@@ -119,19 +119,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const brideMotherAccountBank = "국민은행";
   const brideMotherAccount = "023-21-0644-360";
   const weddingYear = "2026";
-  const weddingMonth = "04";
-  const weddingDay = "26";
-  const weddingDayOfWeekEng = "Sun";
-  const weddingDayOfWeekKor = "일";
+  const weddingMonth = "03";
+  const weddingDay = "28";
+  const weddingDayOfWeekEng = "Sat";
+  const weddingDayOfWeekKor = "토";
   const weddingTimeZone = "AM";
   const weddingTimeZoneKor = "오전";
   const weddingHour = "11";
   const weddingMinute = "00";
-  const weddingLocation = "밀리토피아호텔 바이마린";
-  const weddingLocationDetail = "웨딩센터 2층 아이리스홀";
-  const weddingLocationAddress1 = "경기도 성남시 수정구 위례대로 83";
-  const weddingLocationAddress2 = "경기도 성남시 수정구 창곡동 566";
-  const weddingLocationContact = "031-727-9350";
+  const weddingLocation = "제주 아스타 호텔";
+  const weddingLocationDetail = "연회장명";
+  const weddingLocationAddress1 = "제주 제주시 서사로 129";
+  const weddingLocationAddress2 = "제주 제주시 삼도일동 535-10";
+  const weddingLocationContact = "064-710-1135";
 
   
   const flower_arch_groom_bride_sitting           = "images/weddingPhoto/flower-arch-groom-bride-sitting.JPG";
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 2. 디데이 계산
 function updateDday() {
-  const weddingDate = new Date("2026-04-26T11:00:00+09:00");
+  const weddingDate = new Date("2026-03-28T11:00:00+09:00");
   const today = new Date();
   const diffTime = weddingDate - today;
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -800,10 +800,10 @@ function showToast(message) {
 
 document.addEventListener("DOMContentLoaded", function() {
   new daum.roughmap.Lander({
-    "timestamp" : "1765279961113",
-    "key" : "dyc7m2xawav",
-    "mapWidth" : "100%",
-    "mapHeight" : "360",
-    "container" : "daumRoughmapContainer1765279961113" // div id 지정
-  }).render();
+		"timestamp" : "1767615794976",
+		"key" : "fho2p5xpssu",
+		"mapWidth" : "100%",
+		"mapHeight" : "360",
+    "container" : "daumRoughmapContainer1767615794976"
+	}).render();
 });
