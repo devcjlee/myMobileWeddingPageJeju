@@ -1,0 +1,103 @@
+/* 데스크탑 전용 스타일 (clamp 기반)*/
+body {
+  font-size: clamp(15px, 1vw, 17px); /* 기본 폰트 크기 */
+}
+
+p {
+  line-height: 1.6;
+}
+
+input {
+  font-size: clamp(14px, 1.2vw, 16px);
+}
+
+textarea {
+  font-size: clamp(16px, 2.5vw, 18px); /* 텍스트 영역 글자 크기 */
+}
+
+button {
+  padding: clamp(12px, 1.2vw, 16px) clamp(18px, 1.8vw, 26px); /* 클릭 영역 반응형 */
+  font-size: clamp(15px, 1.2vw, 18px);
+}
+
+.container {
+  padding: clamp(20px, 2vw, 28px) clamp(24px, 3vw, 36px); /* 좌우 여백 반응형 */
+}
+
+.card {
+  padding: clamp(50px, 12vw, 60px) clamp(12px, 3vw, 16px);
+}
+
+.cardTitle {
+  font-size: clamp(23px, 5vw, 32px);
+  margin: 0px 0px clamp(34px, 2vw, 38px) 0px;
+}
+
+#introText {
+  font-size: clamp(30px, 6vw, 48px);
+}
+
+#hero-photo.card {
+  min-height: 95vh;       /* 화면 높이 전체 차지 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 내부 내용 세로 중앙 정렬 */
+}
+
+#hero-photo img {
+  max-width: 100%; /* 작은 화면에서는 꽉 차게 */
+}
+
+#wedding-info-text {
+  font-size: clamp(24px, 4.8vw, 32px);
+}
+
+.familyName{
+  font-size: clamp(19px, 3.8vw, 28px);
+}
+
+.subtle {
+  font-size: clamp(18px, 3.7vw, 27px);
+}
+
+.welcomeMessage {
+  font-size: clamp(19px, 3.8vw, 28px);
+}
+
+#wedding-info-details{
+  font-size: clamp(17.1px, 3.5vw, 24px);
+}
+
+.map-btn {
+  font-size: clamp(16px, 3.0vw, 17px);
+}
+
+#guestbookList {
+  max-height: 450px;
+}
+
+/* 말풍선 */
+.chat-bubble {
+  max-width: 55%;
+}
+
+.send-btn .send-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.info-title {
+  font-size: clamp(16px, 1.35vw, 19px);
+}
+
+.info-line {
+  font-size: clamp(15px, 1.3vw, 18px);
+}
+
+#accountGuideText{
+  font-size: clamp(17.1px, 3.5vw, 24px);
+}
+
+.account-header h3{
+  font-size: clamp(16px, 2vw, 20px);
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- 기본 OG -->
+  <meta property="og:title" content="이치종 · 길신영 결혼합니다.">
+  <meta property="og:description" content="2026년 4월 26일 오전 11시">
+  <meta property="og:image" content="https://devcjlee.github.io/myMobileWeddingPageJeju/images/og/ogImage.JPG">
+  <meta property="og:url" content="https://devcjlee.github.io/myMobileWeddingPageJeju/">
+  <meta property="og:type" content="website">
+  
+  <!-- 확장 OG -->
+  <meta property="og:site_name" content="이치종 & 길신영 결혼식">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="이치종 & 길신영 결혼식 초대 이미지">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="이치종 · 길신영 결혼합니다.">
+  <meta name="twitter:description" content="2026년 4월 26일 오전 11시">
+  <meta name="twitter:image" content="https://devcjlee.github.io/myMobileWeddingPageJeju/images/og/ogImage.JPG">
+
+  <title>LCJ GSY Mobile Wedding Invitation</title>
+  <link rel="stylesheet" href="style-common.css">
+  <link rel="stylesheet" href="style-desktop.css" media="(min-width: 481px)">
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 480px)">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+</head>
+<body>
+  <div id="introOverlay">
+    <canvas id="sakuraCanvas"></canvas>
+    <h1 id="introText"><span data-name="introText"></span></h1>
+  </div>
+  <main class="container">
+    <section id="hero-photo" class="card">
+      <div id="hero-photo-container">
+        <img id="hero-photo-image" data-name="mainPhoto" alt="우리 웨딩 대표 사진" loading="lazy">
+        <div id="hero-text"><span data-name="weddingInvitation"></span></div>
+        <h1 id="wedding-title">
+          <span data-name="groomFullName"></span>
+          <img src="images/illustration/love_heart.png" alt="하트 아이콘" class="heart-icon">
+          <span data-name="brideFullName"></span>
+        </h1>
+      </div>
+      <div id="wedding-info">
+        <p id="wedding-info-text"><span id="dday"></span><br><br><span data-name="weddingYear"></span>.<span data-name="weddingMonth"></span>.<span data-name="weddingDay"></span> <span data-name="weddingDayOfWeekEng"></span> <span data-name="weddingTimeZone"></span> <span data-name="weddingHour"></span>:<span data-name="weddingMinute"></span></p>
+      </div>
+    </section>
+
+    <section class="welcome card">
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+      <p>
+        <span class="familyName" data-name="groomFatherFullName"></span> ·
+        <span class="familyName" data-name="groomMotherFullName"></span>
+        <span class="subtle">의 장남</span>
+        <span class="familyName" data-name="groomFullName"></span>
+      </p>
+      <p>
+        <span class="familyName" data-name="brideFatherFullName"></span> ·
+        <span class="familyName" data-name="brideMotherFullName"></span>
+        <span class="subtle">의 장녀</span>
+        <span class="familyName" data-name="brideFullName"></span>
+      </p>
+
+      <p class="welcomeMessage" data-name="welcomeMessage1"></p>
+      <p class="welcomeMessage" data-name="welcomeMessage2"></p>
+
+      <p class="welcomeMessage" data-name="welcomeMessage3"></p>
+      <p class="welcomeMessage" data-name="welcomeMessage4"></p>
+
+      <p class="welcomeMessage" data-name="welcomeMessage5"></p>
+      <p class="welcomeMessage" data-name="welcomeMessage6"></p>
+      <p class="welcomeMessage" data-name="welcomeMessage7"></p>
+    </section>
+
+    <section class="details card">
+      <h2 class="cardTitle">
+        <span>일시</span>
+        <span class="dot">·</span>
+        <span>장소</span>
+      </h2>
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+      <br>
+      <div id="wedding-info-details">
+        <p><span data-name="weddingYear"></span>년 <span data-name="weddingMonth"></span>월 <span data-name="weddingDay"></span>일 <span data-name="weddingDayOfWeekKor"></span>요일 오전 <span data-name="weddingHour"></span>시</p>
+        <br>
+        <p><span data-name="weddingLocation"></span></p>
+        <p><strong><span data-name="weddingLocationDetail"></span></strong></p>
+      </div>
+    </section>
+
+    <section class="location card">
+      <h2 class="cardTitle">오시는 길</h2>
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+      <!-- 지도 -->
+      <div id="daumRoughmapContainer1765279961113" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      <!-- 지도앱 버튼 -->
+      <div class="map-links">
+        <div class="map-btn ivory" onclick="openMapLink('nmap://search?query=밀리토피아호텔 바이마린 웨딩센터', 'https://naver.me/5qDjdnCy')">
+          네이버 지도
+        </div>
+        <div class="map-btn navy" onclick="openMapLink('kakaomap://search?q=밀리토피아호텔 바이마린 웨딩센터', 'https://kko.kakao.com/p9WobR_gOT')">
+          카카오 지도
+        </div>
+        <div class="map-btn beige" onclick="openMapLink('tmap://search?name=밀리토피아호텔 바이마린 웨딩센터', 'https://tmap.life/d1ad1568')">
+          티맵
+        </div>
+      </div>
+      <br>
+      <!-- 주소 연락처 -->
+      <div class="location-info">
+        <!-- 주소 -->
+        <div class="info-block">
+          <p class="info-title">주소</p>
+          <p class="info-line">
+            - (도로명) <span class="address" data-name="weddingLocationAddress1"></span>
+            <button class="addressCopyButton" onclick="copyAddress('weddingLocationAddress1', this)">복사</button>
+          </p>
+          <p class="info-line">
+            - (지번) <span class="address" data-name="weddingLocationAddress2"></span>
+            <button class="addressCopyButton" onclick="copyAddress('weddingLocationAddress2', this)">복사</button>
+          </p>
+        </div>
+        <!-- 연락처 -->
+        <div class="info-block">
+          <span class="info-title"><strong>연락처 : </strong></span>
+          <span class="info-line" data-name="weddingLocationContact"></span>
+        </div>
+        <!-- 셔틀버스 -->
+        <div class="info-block">
+          <p class="info-title">셔틀버스</p>
+          <p class="info-line">- 남위례역(8호선) 5번출구↔호텔</p>
+          <p class="info-line">- 오전 10시~오후 1시, 15~20분 간격으로 운행</p>
+        </div>
+        <!-- 도보/지하철 -->
+        <div class="info-block">
+          <p class="info-title">도보 및 지하철 이용 시</p>
+          <p class="info-line">- 남위례역(8호선) 3·4번 출구, 도보 8분 소요</p>
+        </div>
+        <!-- 버스 -->
+        <div class="info-block">
+          <p class="info-title">버스 이용 시</p>
+          <p class="info-line">- 서울버스 343번, 345번, 3420번</p>
+          <p class="info-line">- 성남버스 50번, 231번</p>
+          <p class="info-line">- 광역버스 9200번, 9202번</p>
+        </div>
+        <!-- 자가용 -->
+        <div class="info-block">
+          <p class="info-title">자가용 이용 시</p>
+          <p class="info-line">- 웨딩센터 지하 주차장(B1~B3)</p>
+          <!-- 들여쓰기 적용되는 부분 -->
+          <p class="info-line indent-line">
+            - 복정역 교차로(남한산성 방면) → 창곡교차로(위례동 방면) → 밀리토피아
+          </p>
+          <p class="info-line indent-line">
+            - 산성역 사거리(서울 방면) → 창곡교차로(위례동 방면) → 밀리토피아
+          </p>
+        </div>
+        <!-- 공항 안내 -->
+        <div class="info-block">
+          <p class="info-title"><strong>김포공항 ↔ 밀리토피아호텔 교통 안내</strong></p>
+          <p class="info-line">- 일반택시 약 1시간 15분 소요 (약 4~5만원)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos card">
+      <h2 class="cardTitle">갤러리</h2>
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+
+      <!-- 큰 이미지 슬라이더 -->
+      <div class="gallery-slider" id="gallerySlider">
+        <div class="slides">
+          <img data-name="flower_arch_groom_bride_sitting" alt="flower_arch_groom_bride_sitting" loading="lazy">
+          <img data-name="flower_arch_groom_bride_standing" alt="flower_arch_groom_bride_standing" loading="lazy">
+          <img data-name="flower_arch_groom_bride_standing2" alt="flower_arch_groom_bride_standing2" loading="lazy">
+          <img data-name="groom_bride_top_flower_ring" alt="groom_bride_top_flower_ring" loading="lazy">
+          <img data-name="groom" alt="groom" loading="lazy">
+          <img data-name="bride" alt="bride" loading="lazy">
+          <img data-name="white_wall_groom_bride_standing_beigesuit" alt="white_wall_groom_bride_standing_beigesuit" loading="lazy">
+          <img data-name="white_wall_groom_bride_standing_flower" alt="white_wall_groom_bride_standing_flower" loading="lazy">
+          <img data-name="white_wall_groom_bride_standing" alt="white_wall_groom_bride_standing" loading="lazy">
+          <img data-name="window_groom_bride" alt="window_groom_bride" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 썸네일 리스트 -->
+      <div class="thumbnail-list" id="thumbnailList">
+        <img data-name="flower_arch_groom_bride_sitting" data-index="0" alt="thumbnail0" loading="lazy">
+        <img data-name="flower_arch_groom_bride_standing" data-index="1" alt="thumbnail1" loading="lazy">
+        <img data-name="flower_arch_groom_bride_standing2" data-index="2" alt="thumbnail2" loading="lazy">
+        <img data-name="groom_bride_top_flower_ring" data-index="3" alt="thumbnail3" loading="lazy">
+        <img data-name="groom" alt="groom" data-index="4" alt="thumbnail4" loading="lazy">
+        <img data-name="bride" data-index="5" alt="thumbnail5" loading="lazy">
+        <img data-name="white_wall_groom_bride_standing_beigesuit" data-index="6" alt="thumbnail6" loading="lazy">
+        <img data-name="white_wall_groom_bride_standing_flower" data-index="7" alt="thumbnail7" loading="lazy">
+        <img data-name="white_wall_groom_bride_standing" data-index="8" alt="thumbnail8" loading="lazy">
+        <img data-name="window_groom_bride" data-index="9" alt="thumbnail9" loading="lazy">
+      </div>
+      <button id="slideToggleBtn" class="slide-toggle-btn">
+        <img id="slideToggleIcon" src="images/svg-icons/pause.svg" alt="pause">
+      </button>
+    </section>
+
+    <section class="guestbook card">
+      <h2 class="cardTitle">방명록</h2>
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+      <div id="guestbookBox" class="guestbook-box">
+        <!-- 채팅 메시지 리스트 -->
+        <ul id="guestbookList" class="chat-list"></ul>
+        <!-- 카카오톡 스타일 입력창 -->
+        <div class="chat-input-box">
+          <div class="chat-top-row">
+            <input type="text" id="guestName" placeholder="이름" required>
+            <input type="password" id="guestPassword" placeholder="비밀번호(숫자4자리)"  maxlength="4" inputmode="numeric" pattern="\d{4}" required>
+            <button id="sendMessageBtn" class="send-btn">
+              <img src="images/svg-icons/msgSendBtn.svg" alt="send" class="send-icon">
+            </button>
+          </div>
+          <div class="chat-bottom-row">
+            <textarea id="guestMessage" placeholder="축하 메시지를 입력해주세요." required></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="account card">
+      <h2 class="cardTitle">마음 전하실 곳</h2>
+      <img src="images/illustration/card_sakura.png" alt="벚꽃 장식" class="sakura-icon">
+      <div class="account-box">
+        <div class="account-header" onclick="toggleAccount(this)">
+          <h3>신랑 측</h3>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="account-content">
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="groomFatherAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="groomFatherFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="groomFatherAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="groomMotherAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="groomMotherFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="groomMotherAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="groomAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="groomFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="groomAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="account-box">
+        <div class="account-header" onclick="toggleAccount(this)">
+          <h3>신부 측</h3>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="account-content">
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="brideFatherAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="brideFatherFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="brideFatherAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="brideMotherAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="brideMotherFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="brideMotherAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+          <div class="account-item">
+            <div class="account-row">
+              <span class="bank" data-name="brideAccountBank"></span>
+              <span class="owner-group">
+                <span class="account-owner">예금주 : </span>
+                <span class="account-name" data-name="brideFullName"></span>
+              </span>
+            </div>
+            <div class="account-row">
+              <span class="account-number" data-name="brideAccount"></span>
+              <button class="copy-btn" onclick="copyAccount(this)">복사</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="adminLogin" style="display: none;">
+        <input type="email" id="adminEmail" placeholder="이메일">
+        <input type="password" id="adminPassword" placeholder="비밀번호">
+        <button onclick="loginAdmin()">관리자 로그인</button>
+        <button onclick="logoutAdmin()" style="margin-top: 8px;">로그아웃</button>
+      </div>
+    </footer>
+  </main>
+  <div id="deleteModal" class="modal">
+    <div class="modal-content">
+      <h3>메시지 삭제</h3>
+      <p>비밀번호를 입력해주세요</p>
+
+      <input type="password" id="deletePwInput" placeholder="비밀번호 4자리">
+
+      <div class="modal-buttons">
+        <button id="deleteCancelBtn" class="modal-btn cancel">취소</button>
+        <button id="deleteConfirmBtn" class="modal-btn confirm">삭제</button>
+      </div>
+
+      <p id="deleteError" class="error-text"></p>
+    </div>
+  </div>
+  <div id="toast"></div>
+  <footer class="credit">designed & developed with love by devcjlee and gil</footer>
+  <script charset="UTF-8" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

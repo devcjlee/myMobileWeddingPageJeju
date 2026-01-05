@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- 펜 몸통 + 촉 부분 (더 얇고, 끝을 더 뾰족하게 수정) -->
+  <path
+    d="M4 20l3.2-.7L18.2 8.5 15.5 5.8 6 16.3 4 20z"
+    fill="#4b2a00"
+    stroke="#4b2a00"
+    stroke-width="0.3"
+    stroke-linejoin="round"
+  />
+
+  <!-- 바닥 선 (얇게 유지) -->
+  <path
+    d="M6 21h12"
+    fill="none"
+    stroke="#4b2a00"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+</svg>
