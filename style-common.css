@@ -532,7 +532,7 @@ button:active {
   max-width: 60%;
   background: #ffe7e0;
   padding: 12px 14px;
-  margin: 10px 0 10px 12px;
+  margin: 10px 0 10px 20px;
   border-radius: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   color: var(--primary-color);
@@ -564,7 +564,7 @@ button:active {
 .chat-bubble::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: -10px;
   top: 14px;
   width: 0;
   height: 0;
